@@ -67,6 +67,7 @@ _NPM Required_
 - No Automated Tests have been written.
 - Manual testing has been done using Thunder Client/ Postman.
 - **Testing files** are **included** in the static folder.
+
   ![TestingRoutes](/static/testingRoutes.png)
 
 ### Shortcomings
