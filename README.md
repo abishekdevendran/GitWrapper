@@ -1,6 +1,7 @@
 # GitWrapper
 
-A wrapper over GitHub API to automate some specific set of tasks.
+- A wrapper over GitHub API to automate some specific set of tasks.
+- Deployed on [Render](https://gitwrapper.onrender.com/)
 
 ## Build Process
 
@@ -43,9 +44,8 @@ _NodeJS 18 Required for Fetch API_
 
 - `GET /user/secretFans` takes `body.username` and returns the list of users who have starred more than 2 of the specified user's repositories. If the user is not specified, it returns the list of users who have starred the logged in user's repositories.
 - `GET /user/specificSecretFans` takes `body.username` and returns the list of users who have starred exactly 2 of the specified user's repositories. If the user is not specified, it returns the list of users who have starred exactly 2 of the logged in user's repositories. 
--`GET /user/popularRepos` takes `body.username` and returns the list of repositories of the specified user with >5stars and >5forks. If the user is not specified, it returns the list of repositories of the logged in user with >5stars and >5forks. 
-
--`GET /user/activeRepos` takes `body.username` and returns the list of repositories with > 5 commits by owner in last 10 days. If the user is not specified, it returns the list of repositories with > 5 commits by owner in last 10 days.
+- `GET /user/popularRepos` takes `body.username` and returns the list of repositories of the specified user with >5stars and >5forks. If the user is not specified, it returns the list of repositories of the logged in user with >5stars and >5forks.
+- `GET /user/activeRepos` takes `body.username` and returns the list of repositories with > 5 commits by owner in last 10 days. If the user is not specified, it returns the list of repositories with > 5 commits by owner in last 10 days.
 
 ### ENV Variables
 
