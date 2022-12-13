@@ -10,7 +10,7 @@ const redisClient =
       })
     : createClient({
         legacyMode: true,
-        url: 'redis://default:gAfMJJV7r290BrexhAjj@containers-us-west-115.railway.app:7844'
+        url: 'redis://default:kDmtxcRrtspNCjqCmzCy@containers-us-west-162.railway.app:6052'
       });
 
 redisClient
@@ -31,7 +31,7 @@ export default session({
   cookie: {
     sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax', // must be 'none' to enable cross-site delivery
     secure: process.env.NODE_ENV === 'production',
-    maxAge: 1000 * 60 * 30, //30 mins
+    maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
     httpOnly: true
   }
 });
