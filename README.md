@@ -4,7 +4,7 @@ A wrapper over GitHub API to automate some specific set of tasks.
 
 ## Build Process
 
-_NPM Required_
+_NPM 18 Required for Fetch API_
 
 1. Clone the repository.
 2. Run `npm install` to install all the dependencies.
