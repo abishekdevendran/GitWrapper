@@ -1,5 +1,14 @@
-// Middleware to check if the user is authenticated with GitHub
-
+// Middleware to check if session exists
 import { Request, Response, NextFunction } from 'express';
-import { Octokit } from '@octokit/core';
-import { createOAuthUserAuth } from '@octokit/auth-oauth-user';
+
+const auth = (req: Request, res: Response, next: NextFunction) => {
+  console.log('Auth Checking');
+  if (!req.session.accessToken) {
+    res.send('No session found');
+    return;
+  }
+  console.log('access token: ', req.session.accessToken);
+  next();
+};
+
+export default auth;
