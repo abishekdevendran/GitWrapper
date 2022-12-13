@@ -47,6 +47,7 @@ _NPM Required_
 ### ENV Variables
 
 - `PORT` - Port on which the server will run.
+- `SESSION_SECRET` - Cookie Session Secret.
 - `CLIENT_ID` - Client ID of the GitHub OAuth App.
 - `CLIENT_SECRET` - Client Secret of the GitHub OAuth App.
 - `REDIS_URL` - URL of the Redis instance.
